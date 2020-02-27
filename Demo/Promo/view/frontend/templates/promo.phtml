@@ -1,0 +1,24 @@
+<?php
+
+ $popupblockid          =  $this->helper('Demo\Promo\Helper\Data')->getBlockId();
+ $cmsPage               =  $this->helper('Demo\Promo\Helper\Data')->showPopUp();
+ $popup_height          =  $this->helper('Demo\Promo\Helper\Data')->getHeight();
+ $popup_width           =  $this->helper('Demo\Promo\Helper\Data')->getWidth();
+ if($cmsPage == "Yes"){ ?>
+        <div class="outer-bg">
+                <div id="popup">
+                   <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId($popupblockid)->toHtml(); ?>
+                </div>
+         </div>
+
+<?php } ?>
+
+<script type="text/x-magento-init">
+
+    {
+        "*": {
+            "Demo_Promo/js/promo":{"height":"<?php echo $popup_height;?>","width":"<?php echo $popup_width;?>"}
+        }
+    }
+
+</script>

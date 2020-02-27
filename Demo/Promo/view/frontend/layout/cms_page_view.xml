@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Magento\Cms\Block\Page" name="cms_page"/>
+        </referenceContainer>
+
+        <referenceContainer name="content">
+             <block class="Magento\Framework\View\Element\Template" ifconfig="promo/general/enabled" name="promo-block" template="Demo_Promo::promo.phtml">
+                <container name="promo-block-content" label="Promo Block"/>
+            </block>
+        </referenceContainer>
+
+    </body>
+</page>

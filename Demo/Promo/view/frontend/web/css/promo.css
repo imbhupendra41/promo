@@ -1,0 +1,37 @@
+.coupon {
+  width: 80%;
+  border-radius: 15px;
+  margin: 5% auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.coupon .container {
+  padding: 2px 16px;
+}
+.coupon .coupon-container {
+    border: 1px dashed #ccc;
+    padding: 5%;
+}
+.coupon .promo {
+  background: #ccc;
+  padding: 3px;
+}
+
+.coupon .expire {
+  color: red;
+}
+.cms-page-view #popup,
+.cms-index-index #popup {
+    display: none;
+}
+.modal-popup .modal-inner-wrap{ width: 50%; }
+.modal-popup.promo._show .modal-footer,
+.modal-popup.promo._show .modal-footer button,
+.modal-popup.promo._show .action-close {
+    display: none !important;
+}
+.modal-popup.promo._show .modal-header {
+    display: none;
+}
+.modal-popup.promo._show .modal-inner-wrap{ width: 45%; }
